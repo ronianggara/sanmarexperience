@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sponsorship & Kemitraan — SANMAR EXPERIENCE 2026</title><meta name="description" content="Paket kemitraan dan cara mendukung SANMAR EXPERIENCE 2026 — untuk sponsor, orang tua, dan wali.">
+<link rel="icon" href="assets/img/favicon.png" sizes="any"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head><body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/img/logo.webp" alt="Logo SANMAR EXPERIENCE 2026" height="42" style="width:auto"><span><b>SANMAR EXPERIENCE 2026</b><small>SMP Katolik Santa Maria Kediri</small></span></a>
+  <button class="burger" id="navBtn" type="button" aria-label="Buka menu" aria-controls="nv" aria-expanded="false">☰</button>
+  <nav class="nav" id="nv">
+    <a href="index.html#lomba">Lomba</a><a href="index.html#rangkaian">Rangkaian</a><a href="index.html#skor-bola-basket">Basketball</a><a href="pemenang.html">Juara</a><a href="download.html">Download</a><a href="sponsor.html">Sponsor</a><a href="cek-status.html">Cek Status</a>
+    <a class="btn sm ghost" id="navReg" href="register.html">Pendaftaran ditutup</a>
+  </nav></div></header>
+<div class="nav-ov" id="navOv"></div>
+
+<section class="hero" style="padding:0"><div class="wrap" style="grid-template-columns:1fr;padding-top:46px;padding-bottom:46px;text-align:center">
+  <div><span class="kicker">Sponsorship &amp; Kemitraan</span><h1 style="font-size:clamp(30px,5vw,48px)">Bersama menyemarakkan <em>SANMAR EXPERIENCE</em></h1>
+  <p style="margin-inline:auto">Dukungan Anda membuat anak-anak kita berprestasi, bersahabat, dan bertumbuh. Kami terbuka untuk kemitraan dalam berbagai bentuk.</p>
+  <a class="btn y" href="#paket">Lihat paket kemitraan</a> <a class="btn ghost" style="color:#fff;border-color:#fff" href="#bantu">Saya ingin membantu</a></div></div></section>
+
+<section id="paket"><div class="wrap"><div class="head"><span class="eyebrow">Paket Kemitraan</span><h2>Pilih bentuk dukungan</h2><p>Setiap paket dapat disesuaikan. Hubungi tim sponsorship untuk proposal lengkap.</p></div>
+  <div class="pk-grid" id="paketGrid"></div></div></section>
+
+<section class="alt" id="bantu"><div class="wrap">
+  <div class="head"><span class="eyebrow">Mari Berperan</span><h2>Kami mengajak setiap orang tua/wali/sponsor untuk berperan</h2><p>Peran yang dapat dibantu — sesuai waktu dan kemampuan Bapak/Ibu:</p></div>
+  <ol class="peran" style="max-width:760px;margin-bottom:28px"><li>Menyebarkan informasi kegiatan kepada jejaring masing-masing.</li><li>Berperan serta menjadi sponsor.</li><li>Membantu memetakan usaha, profesi, dan keahlian orang tua.</li><li>Menghubungkan calon mitra dengan tim sponsorship sekolah.</li><li>Mendukung kegiatan sesuai waktu dan kemampuan.</li></ol>
+  <form class="form" id="bantuForm" style="max-width:720px">
+    <h3>Saya ingin membantu</h3>
+    <div class="hp" aria-hidden="true"><label>Website</label><input name="website" tabindex="-1" autocomplete="off"></div>
+    <div class="row2"><div><label>Nama lengkap</label><input name="nama" maxlength="80" required></div><div><label>No. WhatsApp</label><input name="wa" inputmode="tel" placeholder="08xxxxxxxxxx" required></div></div>
+    <label>Saya adalah</label><select name="status"><option value="orangtua" selected>Orang tua</option><option value="wali">Wali murid</option><option value="sponsor">Calon sponsor / mitra usaha</option><option value="lainnya">Lainnya</option></select>
+    <label>Usaha / profesi / keahlian <small>(membantu pemetaan; opsional)</small></label><input name="usaha" maxlength="150" placeholder="mis. Percetakan, dokter gigi, fotografer, katering">
+    <label>Peran yang bersedia dibantu</label>
+    <label class="chk"><input type="checkbox" name="peran" value="Menyebarkan informasi kegiatan kepada jejaring masing-masing."><span>Menyebarkan informasi kegiatan kepada jejaring masing-masing.</span></label>
+    <label class="chk"><input type="checkbox" name="peran" value="Berperan serta menjadi sponsor."><span>Berperan serta menjadi sponsor.</span></label>
+    <label class="chk"><input type="checkbox" name="peran" value="Membantu memetakan usaha, profesi, dan keahlian orang tua."><span>Membantu memetakan usaha, profesi, dan keahlian orang tua.</span></label>
+    <label class="chk"><input type="checkbox" name="peran" value="Menghubungkan calon mitra dengan tim sponsorship sekolah."><span>Menghubungkan calon mitra dengan tim sponsorship sekolah.</span></label>
+    <label class="chk"><input type="checkbox" name="peran" value="Mendukung kegiatan sesuai waktu dan kemampuan."><span>Mendukung kegiatan sesuai waktu dan kemampuan.</span></label>
+    <label>Pesan <small>(opsional)</small></label><textarea name="pesan" maxlength="500" style="min-height:80px"></textarea>
+    <p><button class="btn red" id="bantuSubmit">Kirim</button></p>
+    <div id="bantuStatus"></div>
+  </form>
+</div></section>
+
+<section id="kontak"><div class="wrap"><div class="head"><span class="eyebrow">Contact Person Sponsorship</span><h2>Hubungi tim sponsorship</h2><p>Untuk proposal, kerja sama, atau menghubungkan calon mitra dengan sekolah.</p></div>
+  <div class="cp-wrap" id="cpSponsor"></div></div></section>
+<footer><div class="wrap">
+  <b>SANMAR EXPERIENCE 2026</b> · SMP Katolik Santa Maria Kediri<br>Jl. Brawijaya No.63, Kediri, Jawa Timur<br>
+  Bantuan panitia: <a href="https://wa.me/6285607606423" target="_blank" rel="noopener">WhatsApp</a>
+  · <a href="download.html">Download</a> · <a href="sponsor.html">Sponsorship</a> · <a href="referral.html">Duta Referral</a> · <a href="kesan-pesan.html">Kesan &amp; Pesan</a> · <a href="admin/">Panitia</a>
+</div></footer>
+<button type="button" id="toTop" class="totop noprint" aria-label="Kembali ke atas" title="Kembali ke atas"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg></button>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/seed.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/sponsor.js"></script>
+</body></html>

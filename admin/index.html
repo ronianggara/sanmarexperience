@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panel Panitia — SANMAR EXPERIENCE 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../assets/img/favicon.png" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/admin.css">
+</head><body>
+
+<div id="loginView" class="login-wrap">
+  <div class="login-card">
+    <div class="brand"><img src="../assets/img/logo.webp" alt="Logo SANMAR EXPERIENCE 2026"><span><b>SANMAR EXPERIENCE 2026</b><small>Panel Panitia</small></span></div>
+    <div id="loginInner">
+      <h1>Masuk admin</h1>
+      <p class="sub">Kelola pendaftaran, skor, juara, dan konten situs.</p>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input id="username" name="username" value="admin" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <p><button class="btn" id="loginBtn" style="width:100%;justify-content:center;margin-top:16px">Masuk</button></p>
+        <div id="loginStatus"></div>
+      </form>
+      <div class="hint">Akun bawaan: <b>admin</b> / <b>Sanmar#2026</b> — segera ganti password setelah masuk.</div>
+    </div>
+  </div>
+</div>
+
+<div id="appView" class="app" hidden>
+  <aside class="side">
+    <div class="brand"><img src="../assets/img/logo.webp" alt=""><span><b>SANMAR ADMIN</b><small>EXP 2026</small></span></div>
+    <nav id="nav">
+      <button data-tab="ringkasan"><span class="dot"></span>Ringkasan</button>
+      <button data-tab="pendaftaran"><span class="dot"></span>Pendaftaran</button>
+      <button data-tab="pertandingan"><span class="dot"></span>Basket &amp; Skor</button>
+      <button data-tab="juara"><span class="dot"></span>Juara</button>
+      <button data-tab="lomba"><span class="dot"></span>Lomba &amp; Kategori</button>
+      <button data-tab="tim"><span class="dot"></span>Tim Basket</button>
+      <button data-tab="sponsor"><span class="dot"></span>Sponsor &amp; Paket</button>
+      <button data-tab="rangkaian"><span class="dot"></span>Rangkaian</button>
+      <button data-tab="kesan"><span class="dot"></span>Kesan &amp; Pesan</button>
+      <button data-tab="referral"><span class="dot"></span>Duta Referral</button>
+      <button data-tab="bantuan"><span class="dot"></span>Bantuan Sponsor</button>
+      <button data-tab="pengaturan"><span class="dot"></span>Pengaturan</button>
+      <button data-tab="akun"><span class="dot"></span>Akun</button>
+    </nav>
+    <div class="foot">
+      <span id="whoami"></span>
+      <a href="../index.html" target="_blank">Lihat situs ↗</a>
+      <button class="out" id="logoutBtn" type="button">Keluar</button>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="topbar">
+      <div><h1 id="pageTitle">Ringkasan</h1><div class="sub" id="pageSub"></div></div>
+      <div class="actions">
+        <a class="btn ghost sm" href="../index.html" target="_blank">Lihat situs</a>
+        <button class="btn sm" id="refreshBtn" type="button">Muat ulang</button>
+      </div>
+    </div>
+    <div id="content"></div>
+  </main>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card">
+    <header><h2 id="modalTitle"></h2><button type="button" id="modalClose" aria-label="Tutup">✕</button></header>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/api.js"></script>
+<script src="../assets/js/admin.js"></script>
+</body></html>
